@@ -22,6 +22,19 @@
 .main {
   background-color: rgb(40, 40, 144);
   height: 30rem;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.leftBox {
+  background-color: rgb(104, 83, 124);
+  height: 100%;
+  width: 50%;
+}
+.rightBox {
+  background-color: rgb(53, 10, 94);
+  width: 50%;
+  height: 100%;
 }
 .footer {
   background-color: aquamarine;

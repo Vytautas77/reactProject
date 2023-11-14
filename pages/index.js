@@ -19,7 +19,10 @@ const Home = () => {
           </ul>
         </nav>
       </header>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <div className={styles.leftBox}></div>
+        <div className={styles.rightBox}></div>
+      </main>
       <footer className={styles.footer}>
         <spam>&#169;</spam>
       </footer>
