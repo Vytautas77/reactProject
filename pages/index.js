@@ -1,31 +1,13 @@
-import styles from "../styles/Home.module.css";
+import Header from "@/components/header/Header";
+import Main from "@/components/main/Main";
+import Footer from "@/components/footer/Footer";
 
 const Home = () => {
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.logo}>Type17</div>
-        <nav className={styles.nav}>
-          <ul>
-            <li>
-              <a href="#">some link</a>
-            </li>
-            <li>
-              <a href="#">another link</a>
-            </li>
-            <li>
-              <a href="#">third link</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main className={styles.main}>
-        <div className={styles.leftBox}></div>
-        <div className={styles.rightBox}></div>
-      </main>
-      <footer className={styles.footer}>
-        <spam>&#169;</spam>
-      </footer>
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 };
