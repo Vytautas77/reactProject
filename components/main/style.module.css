@@ -6,12 +6,18 @@
   padding: 2rem;
 }
 .leftBox {
+  padding: 0.3rem;
   background-color: rgb(104, 83, 124);
   height: 100%;
   width: 50%;
+  display: flex;
+  gap: 1rem;
 }
 .rightBox {
+  padding: 0.3rem;
   background-color: rgb(53, 10, 94);
   width: 50%;
   height: 100%;
+  display: flex;
+  gap: 1rem;
 }
