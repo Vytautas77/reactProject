@@ -5,6 +5,7 @@ import Article1 from "../article/Article1";
 import styles from "./style.module.css";
 
 const Main = ({ article }) => {
+  const [isArticle, setIsArticle] = useState(true);
   // const [articleTitle, setArticleTitle] = useState(
   //   "The best small cars to buy in 2023"
   // );
@@ -51,6 +52,7 @@ const Main = ({ article }) => {
           title={article[1].title}
           subTitle={article[1].subTitle}
           imgUrl={article[1].imgUrl}
+          isArticle={isArticle}
         />
       </div>
       <div className={styles.rightBox}>

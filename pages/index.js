@@ -2,9 +2,12 @@ import { useState } from "react";
 import Header from "@/components/header/Header";
 import Main from "@/components/main/Main";
 import Footer from "@/components/footer/Footer";
+import FooterX from "@/components/footerX/FooterX";
 
 const Home = () => {
-  const [logo, setLogo] = useState("type17");
+  const [logo, setLogo] = useState("Type17");
+  const [isArticle, setIsArticle] = useState(false);
+
   const article = [
     {
       title: "The best small cars to buy in 2023",
@@ -20,8 +23,7 @@ const Home = () => {
     },
     {
       title: "Top 10 best super-luxury cars 2023",
-      subTitle:
-        "If Scrooge McDuck were paying, which car would he be buying in 2023",
+      subTitle: "Which car would he be buying in 2023",
       imgUrl:
         "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/rolls_royce_phantom_top_10.jpg?itok=XjL9f1tx",
     },
@@ -35,9 +37,17 @@ const Home = () => {
 
   return (
     <>
+      <button
+        onClick={() => {
+          setLogo("Type15");
+        }}
+      >
+        Click
+      </button>
       <Header logo={logo} />
       <Main article={article} />
       <Footer />
+      <FooterX />
     </>
   );
 };

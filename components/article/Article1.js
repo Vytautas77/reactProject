@@ -1,12 +1,17 @@
+import { useState } from "react";
 import styles from "./style.module.css";
-import auto from "../assets/auto.jpg";
 const Article1 = ({ title, subTitle, imgUrl }) => {
+  const [isArticle, setIsArticle] = useState(true);
   return (
-    <div className={styles.main}>
-      <img src={imgUrl} />
-      <h6>{subTitle}</h6>
-      <h2>{title}</h2>
-    </div>
+    <>
+      {isArticle && (
+        <div className={styles.main}>
+          <img src={imgUrl} />
+          <h6>{subTitle}</h6>
+          <h2>{title}</h2>
+        </div>
+      )}
+    </>
   );
 };
 
