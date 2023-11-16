@@ -1,8 +1,7 @@
 import { useState } from "react";
 import styles from "./style.module.css";
 
-const Article = ({ title, subTitle, imgUrl }) => {
-  const [isArticle, setIsArticle] = useState(true);
+const Article = ({ title, subTitle, imgUrl, isArticle }) => {
   return (
     <>
       {isArticle && (

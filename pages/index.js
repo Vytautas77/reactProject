@@ -6,7 +6,8 @@ import FooterX from "@/components/footerX/FooterX";
 
 const Home = () => {
   const [logo, setLogo] = useState("Type17");
-  const [isArticle, setIsArticle] = useState(false);
+  const [isArticle, setIsArticle] = useState(true);
+  const [isArticle1, setIsArticle1] = useState(true);
 
   const article = [
     {
@@ -44,8 +45,14 @@ const Home = () => {
       >
         Click
       </button>
-      <Header logo={logo} />
-      <Main article={article} />
+      <Header
+        logo={logo}
+        setIsArticle={setIsArticle}
+        isArticle={isArticle}
+        setIsArticle1={setIsArticle1}
+        isArticle1={isArticle1}
+      />
+      <Main article={article} isArticle={isArticle} isArticle1={isArticle1} />
       <Footer />
       <FooterX />
     </>

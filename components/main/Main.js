@@ -4,8 +4,7 @@ import Article from "../article/Article";
 import Article1 from "../article/Article1";
 import styles from "./style.module.css";
 
-const Main = ({ article }) => {
-  const [isArticle, setIsArticle] = useState(true);
+const Main = ({ article, isArticle, isArticle1 }) => {
   // const [articleTitle, setArticleTitle] = useState(
   //   "The best small cars to buy in 2023"
   // );
@@ -47,6 +46,7 @@ const Main = ({ article }) => {
           title={article[0].title}
           subTitle={article[0].subTitle}
           imgUrl={article[0].imgUrl}
+          isArticle={isArticle}
         />
         <Article
           title={article[1].title}
@@ -60,11 +60,13 @@ const Main = ({ article }) => {
           title={article[2].title}
           subTitle={article[2].subTitle}
           imgUrl={article[2].imgUrl}
+          isArticle1={isArticle1}
         />
         <Article1
           title={article[3].title}
           subTitle={article[3].subTitle}
           imgUrl={article[3].imgUrl}
+          isArticle1={isArticle1}
         />
       </div>
     </main>
